@@ -1,0 +1,12 @@
+$primary-color: #0073aa;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $primary-color;
+
+  .header {
+    padding: 10px;
+    color: white;
+    background: darken($primary-color, 10%);
+  }
+}

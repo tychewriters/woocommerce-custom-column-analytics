@@ -1,0 +1,2 @@
+(()=>{"use strict";const e=window.wp.hooks,o=window.wp.i18n;(0,e.addFilter)("woocommerce_admin_report_table","woocommerce-custom-column-analytics",(e=>{if("orders"!==e.endpoint)return e;const t=[...e.headers,{label:(0,o.__)("Payment Method","woocommerce-custom-column-analytics"),key:"payment_method",required:!1}],m=e.rows.map(((t,m)=>{const n=e.items.data[m];return[...t,{display:n.payment_method||(0,o.__)("N/A","woocommerce-custom-column-analytics"),value:n.payment_method||""}]}));return e.headers=t,e.rows=m,e}))})();
+//# sourceMappingURL=index.js.map
